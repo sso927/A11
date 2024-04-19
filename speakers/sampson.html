@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <head>
 	<meta charset="utf-8">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="../images/favicon.ico">
 	<link rel="stylesheet" href="../styles/speaker.css">
+
+	<!--slicknav and jquery-->
+	<link rel="stylesheet" href= "../styles/speaker.css">
+	<link rel = "stylesheet" href = "/styles/slicknav.css">
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src = "/jquery.slicknav.min.js"></script>
+	<script type = "text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"})
+			});
+	</script>
 </head>
 
 <body>
@@ -15,9 +28,12 @@
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
 
+	<nav id = "mobile_menu"></nav>
+	<nav id = "nav_menu">
+
 	<nav id = "nav_menu"> 
 		<ul>
-			<li><a href = "#" class= "current">Home </a></li>
+			<li><a href = "/index.html"class= "current">Home </a></li>
 			<li><a href = "#">Speakers</a></li>
 			<li><a href = "#">Luncheons</a></li>
 			<li><a href = "#">Tickets</a></li>
@@ -30,6 +46,7 @@
 				</ul>
 			</li>
 		</ul>
+	</nav>
 	</nav>
 	<main>
 		<section>
@@ -63,15 +80,18 @@
 		
 		<aside>
 			<h2>Guest speakers</h2>
-			<h3>October<br><a href="../speakers/brancaccio.html">David Brancaccio</a></h3>
-			<img src="../images/brancaccio75.jpg" alt="David Brancaccio photo">
-			<h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
-			<img src="../images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
-			<h3>January<br><a href="../speakers/chua.html">Amy Chua</a></h3>
-			<img src="../images/chua75.jpg" alt="Amy Chua photo">
-			<h3>February<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
-			<img src="../images/sampson75.jpg" alt="Scott Sampson photo">
-			<h3><a href="../index.html">Return to Home page</a></h3>
+			<div>
+				<h3>October<br><a href="../speakers/brancaccio.html">David Brancaccio</a></h3>
+				<img src="../images/brancaccio75.jpg" alt="David Brancaccio photo">
+				<h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+				<img src="../images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+				<h3>January<br><a href="../speakers/chua.html">Amy Chua</a></h3>
+				<img src="../images/chua75.jpg" alt="Amy Chua photo">
+				<h3>February<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+				<img src="../images/sampson75.jpg" alt="Scott Sampson photo">
+				<h3><a href="../index.html">Return to Home page</a></h3>
+			</div>
+			
 		</aside>
 	</main>
 	<footer>
